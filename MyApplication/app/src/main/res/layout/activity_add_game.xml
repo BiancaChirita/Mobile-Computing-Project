@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGameActivity"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/relAddGameTopToolbar">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_arrow"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/ivBackFromAddGame"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_check"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivAddGameCheck"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relAddGameDetails"
+        android:layout_below="@id/relAddGameTopToolbar"
+        >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/ivAddGameImg"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/ivAddGameImg"
+            android:gravity="center"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+            android:text="Select an image"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/txtAddGameImg"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter a name"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/ivAddGameImg"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/etAddGameName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a description"
+            android:layout_below="@id/etAddGameName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edAddGameDescription"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

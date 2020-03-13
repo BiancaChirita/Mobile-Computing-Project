@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAchievementActivity"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/relAddAchievementTopToolbar">
+
+        <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:background="@drawable/ic_left_arrow"
+           android:layout_alignParentLeft="true"
+           android:id="@+id/ivBackFromAddGame"
+           />
+
+        <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:background="@drawable/ic_check"
+           android:layout_alignParentRight="true"
+           android:id="@+id/ivAddGameCheck"
+           android:layout_marginRight="10dp"
+           />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relAddAchievementDetails"
+        android:layout_below="@id/relAddAchievementTopToolbar"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter a name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/edAddAchievementName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter a description"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/edAddAchievementName"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edAddAchievementDescription"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
