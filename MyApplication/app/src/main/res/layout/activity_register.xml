@@ -31,6 +31,7 @@
         android:layout_centerHorizontal="true"
         android:hint="Enter password"
         android:id="@+id/txtRegisterPassword"
+        android:inputType="textPassword"
         android:layout_below="@id/txtRegisterUsername"
         />
     <EditText
@@ -41,6 +42,7 @@
         android:id="@+id/txtRegisterConfirmPass"
         android:layout_below="@id/txtRegisterPassword"
         android:textColor="@color/colorBlack"
+        android:inputType="textPassword"
         />
 
     <Button
@@ -51,5 +53,16 @@
         android:text="Register"
         android:id="@+id/btnRegister"
         android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Login here"
+        android:textSize="15dp"
+        android:id="@+id/txtLoginHere"
         />
 </RelativeLayout>
